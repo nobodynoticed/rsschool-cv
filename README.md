@@ -1,1 +1,1 @@
-https://nobodynoticed/github.com/rsschool-cv/cv
+https://nobodynoticed.github.io/rsschool-cv/cv
