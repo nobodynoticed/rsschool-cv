@@ -6,6 +6,20 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(125, 73, 112, 1) 100%);
+  opacity: 0.8;
+  color: #fff;
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: aquamarine;
 }
 
 .container {
@@ -18,4 +32,36 @@ body {
   max-width: 150px;
   width: 100%;
   border-radius: 100%;
+  margin-right: 20px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  color: aquamarine;
+  font-weight: 700;
+}
+
+.course-img {
+  height: 70px;
+  transition: all 0.3s;
+}
+
+.course-img:hover {
+  background: #36cf52;
+  transition: all 0.3s;
+}
+
+.github {
+  margin-bottom: 30px;
+}
+
+.footer {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
