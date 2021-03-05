@@ -5,4 +5,17 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.avatar {
+  display: inline-block;
+  max-width: 150px;
+  width: 100%;
+  border-radius: 100%;
 }
