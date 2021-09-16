@@ -8,3 +8,9 @@
 - **Telegram:** <https://t.me/nobodynoticed>
 
 ---
+
+## Goal:
+
+**My goal is to become a frontend developer**
+
+---
