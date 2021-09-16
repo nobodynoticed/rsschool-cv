@@ -21,3 +21,7 @@
 - **CSS3**
 - **HTML5**
 - **JavaScript ES6**
+
+## English Level:
+
+**I think my English level is A1 (but this needs to be checked)**
