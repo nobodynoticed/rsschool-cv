@@ -41,6 +41,18 @@ p {
   margin: 0;
 }
 
+pre {
+  margin: 0;
+}
+
+.hljs {
+  background-color: #fff;
+  padding: 0;
+  border: 3px solid #000;
+  padding: 10px;
+  width: 100%;
+}
+
 figure {
   margin: 0;
 }
@@ -71,12 +83,15 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .card {
   background-color: #fff;
   max-width: 100%;
-  min-height: 90vh;
   padding: 10px;
   box-shadow: 0px 0px 6px 8px var(--main-color);
   border-radius: 15px;
@@ -87,27 +102,31 @@ ul {
   margin-bottom: 50px;
 }
 
-
-
 .card__header {
   display: flex;
   flex-wrap: wrap;
-  min-height: 380px;
+  min-height: 340px;
   justify-content: space-around;
   align-items: self-start;
   border: 3px solid #000;
   padding: 10px;
 }
 
-.card__header-block, .card__header-block h3 {
+.card__header-block,
+.card__header-block h3 {
   border: 3px solid #000;
   padding: 10px;
+}
+
+.card__header-block {
+  min-height: 310px;
 }
 
 figure img {
   display: inline-block;
   object-fit: cover;
   border: 3px solid #000;
+  border-right: none;
   height: 310px;
   width: 100%;
 }
@@ -151,12 +170,11 @@ figure img {
   text-align: center;
 }
 
-
 li strong {
   text-transform: uppercase;
 }
 
-.card__goal{
+.card__goal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,12 +183,15 @@ li strong {
   padding: 10px;
 }
 
-.card__goal h2 {
+.card__goal h2,
+.card__code-title {
   border: 3px solid #000;
   padding: 10px;
 }
 
-.card__hard-skills {
+.card__hard-skills,
+.card__english,
+.card__code {
   border: 3px solid #000;
   display: flex;
   justify-content: center;
@@ -205,4 +226,99 @@ li strong {
   display: inline-block;
   width: 100%;
   text-align: center;
+}
+
+.card__english-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 585px;
+  width: 100%;
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+.card__english-subtitle {
+  font-size: 16px;
+  border: 3px solid #000;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.card__english-title {
+  border: 3px solid #000;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card__code-title {
+  margin-right: 15px;
+}
+
+.card__code-wrap {
+  width: 100%;
+}
+
+.card__footer {
+  border: 3px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.card__footer-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card__footer-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 230px;
+  width: 100%;
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+.card__footer-copyright {
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+.card__footer-contacts a {
+  font-size: 17px;
+  display: inline-block;
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+.card__footer-contacts  img {
+  display: block;
+  width: 100%;
+}
+
+
+
+@media (max-width: 770px) {
+  figure img {
+    border-right: 3px solid #000;
+  }
+}
+
+@media(max-width: 400px) {
+  .card__footer-copyright {
+    margin-bottom: 20px;
+  }
 }

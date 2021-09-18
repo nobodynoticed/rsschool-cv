@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -19,7 +20,7 @@
               <img src="./portfolio-img.jpg" alt="avatar">
             </figure>
             <div class="card__header-block">
-              <h1 class="card__title">Evgeniy Jukov</h1>
+              <h1 class="card__title">Hello, my name is Evgeniy Jukov</h1>
               <h3>At the moment, I am learning front-end</h3>
             </div>
           </header>
@@ -51,23 +52,47 @@
             </ul>
           </div>
         </section>
+        <section class="card__english">
+          <div class="card__english-block">
+            <h2 class="card__english-title">English Level:</h2>
+            <h5 class="card__english-subtitle">I think my English level is A1 (but this needs to be checked)</h5>
+          </div>
+        </section>
+        <section class="card__code">
+          <h2 class="card__code-title">Code Example:</h2>
+          <div class="card__code-wrap">
+            <pre>
+  <code>
+    function euclideanDistance(point1, point2) {
+      let sum = 0;
+    
+      for (let i = 0; i < point2.length; i++) {
+        sum += Math.pow(point2[i] - point1[i], 2);
+      }
+    
+      return +Math.sqrt(sum).toFixed(2);
+    }
+    
+  </code>
+</pre>
+          </div>
+        </section>
       </main>
+      <footer class="card__footer">
+        <div class="card__footer-wrap">
+          <div class="card__footer-copyright">©2021 by Evgeniy Jukov</div>
+          <div class="card__footer-contacts">
+            <a href="https://github.com/nobodynoticed" target="_blank">Github</a>
+              <a href="https://rs.school/js/" target="_blank">
+                <img src="./rs_school.svg" alt="logo rss" width="80" height="30">
+              </a>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>
-
-
-
-<!-- markdown -->
-
-<!-- <h2 id="skills-">Skills:</h2>
-<ul>
-<li><strong>GIT</strong></li>
-<li><strong>CSS3</strong></li>
-<li><strong>HTML5</strong></li>
-<li><strong>JavaScript ES6</strong></li>
-</ul>
-<h2 id="english-level-">English Level:</h2>
-<p><strong>I think my English level is A1 (but this needs to be checked)</strong></p> -->
