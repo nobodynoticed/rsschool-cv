@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -14,7 +15,7 @@
   <div class="wrapper">
     <div class="card">
       <main>
-        <section class="card__wrap">
+        <section class="card__wrap" id="card-header">
           <header class="card__header">
             <figure class="card__logo">
               <img src="./portfolio-img.jpg" alt="avatar">
@@ -25,8 +26,32 @@
             </div>
           </header>
         </section>
-        <article class="card__contacts">
+        <article class="card__contacts" id="card-contacts">
           <h2>Contacts:</h2>
+
+          <button class="btn">☰</button>
+          <aside class="aside-burger">
+            <nav class="aside-burger__nav">
+              <ul class="aside-burger__menu">
+                <li class="aside-burger__item">
+                  <a class="aside-burger__link" href="#card-header">Who Am I</a>
+                </li>
+                <li class="aside-burger__item">
+                  <a class="aside-burger__link" href="#card-contacts">Contacts</a>
+                </li>
+                <li class="aside-burger__item">
+                  <a class="aside-burger__link" href="#card-goal">Goal</a>
+                </li>
+                <li class="aside-burger__item">
+                  <a class="aside-burger__link" href="#card-english-level">English Level</a>
+                </li>
+                <li class="aside-burger__item">
+                  <a class="aside-burger__link" href="#card-code-example">Code Example</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
           <nav class="card__contacts-nav">
             <ul>
               <li>
@@ -38,7 +63,7 @@
             </ul>
           </nav>
         </article>
-        <section class="card__goal">
+        <section class="card__goal" id="card-goal">
           <h2>My goal is to become a frontend developer</h2>
         </section>
         <section class="card__hard-skills">
@@ -52,13 +77,13 @@
             </ul>
           </div>
         </section>
-        <section class="card__english">
+        <section class="card__english" id="card-english-level">
           <div class="card__english-block">
             <h2 class="card__english-title">English Level:</h2>
             <h5 class="card__english-subtitle">I think my English level is A1 (but this needs to be checked)</h5>
           </div>
         </section>
-        <section class="card__code">
+        <section class="card__code" id="card-code-example">
           <h2 class="card__code-title">Code Example:</h2>
           <div class="card__code-wrap">
             <pre>
@@ -83,9 +108,9 @@
           <div class="card__footer-copyright">©2021 by Evgeniy Jukov</div>
           <div class="card__footer-contacts">
             <a href="https://github.com/nobodynoticed" target="_blank">Github</a>
-              <a href="https://rs.school/js/" target="_blank">
-                <img src="./rs_school.svg" alt="logo rss" width="80" height="30">
-              </a>
+            <a href="https://rs.school/js/" target="_blank">
+              <img src="./rs_school.svg" alt="logo rss" width="80" height="30">
+            </a>
           </div>
         </div>
       </footer>
