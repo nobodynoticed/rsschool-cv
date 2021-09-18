@@ -6,6 +6,10 @@ btn.addEventListener('click', () => {
   nav.classList.toggle('active');
   btn.classList.toggle('active');
 
+  if (nav.classList.contains('active')) {
+    nav.style.visibility = 'visible';
+  }
+
   if (btn.classList.contains('active')) {
     btn.textContent = '❎';
     btn.style.transition = 'transform 0.3s ease-in-out';
