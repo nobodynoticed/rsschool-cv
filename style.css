@@ -360,8 +360,6 @@ li strong {
   transition: transform 0.3s ease-in-out;
   padding: 10px;
   visibility: hidden;
-  /* width: 0;
-  font-size: 0; */
 }
 
 .aside-burger__nav.active {
